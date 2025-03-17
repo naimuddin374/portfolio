@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import React from "react";
 import About from "../components/About";
@@ -13,15 +14,17 @@ const HomePage = () => {
     <React.Fragment>
       <Navbar />
       <HeroBanner />
-      <MediaIcon />
-      <Divider />
-      <About />
-      <Divider />
-      <Education />
-      <Divider />
-      <Publications />
-      <Divider />
-      <ProfessionalExperience />
+      <Box px={2}>
+        <MediaIcon />
+        <Divider />
+        <About />
+        <Divider />
+        <Education />
+        <Divider />
+        <Publications />
+        <Divider />
+        <ProfessionalExperience />
+      </Box>
       <Footer />
     </React.Fragment>
   );
