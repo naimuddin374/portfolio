@@ -10,14 +10,15 @@ const About = () => {
       <Grid2 container spacing={2}>
         <Grid2 size={3}>
           <Box
-            p={0.5}
+          height={'100%'}
+            p={1}
             border={1}
             borderRadius={1}
             borderColor={"rgba(0, 0, 0, .125)"}
           >
             <img
-              style={{ width: "100%" }}
-              src="https://images.pexels.com/photos/8506631/pexels-photo-8506631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              style={{ width: "100%",objectFit:'cover',height:'100%' }}
+              src="https://www.hubspot.com/hs-fs/hubfs/portfoliowebsites-1.webp?width=595&name=portfoliowebsites-1.webp"
               alt=""
             />
           </Box>
@@ -29,7 +30,7 @@ const About = () => {
             borderRadius={1}
             borderColor={"rgba(0, 0, 0, .125)"}
           >
-            <Typography mb={2}>
+            <Typography mb={2} lineHeight={'30px'}>
               Hi! I'm Shaykh Siddique, a PhD student in the Department of
               Computer Science at Texas A&M University. I'm advised by Dr.
               Nitesh Saxena and co-advised by Dr. Irfan Khan in the{" "}
@@ -57,7 +58,7 @@ const About = () => {
               lab. My research interests lie in building privacy engineering
               tools using machine learning and artificial intelligence.
             </Typography>
-            <Typography mb={2}>
+            <Typography mb={2} lineHeight={'30px'}>
               My passion for applying Deep Learning and Artificial Intelligence
               to real-world challenges has grown stronger as I've developed my
               skills over the years. The deeper I delve into this field, the
@@ -65,7 +66,7 @@ const About = () => {
               areas like cybersecurity, air/marine defense systems, and computer
               vision for medical imaging.
             </Typography>
-            <Typography mb={2}>
+            <Typography mb={2} lineHeight={'30px'}>
               I completed my MS in Computer Science from Prairie View A&M
               University, Texas, USA. My master’s thesis focused on applying
               machine learning to sports, where I developed predictive models
@@ -73,7 +74,7 @@ const About = () => {
               leveraging statistical and computational techniques to optimize
               teaming strategies in sports management.
             </Typography>
-            <Typography>
+            <Typography lineHeight={'30px'}>
               Beyond my research pursuits, I have a deep passion for traveling
               and immersing myself in nature. I find great joy in exploring new
               places and experiencing different cultures. Additionally, I enjoy

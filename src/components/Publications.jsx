@@ -32,6 +32,7 @@ const Publications = () => {
       </Typography>
 
       <Box
+         ml={3.5}
         pl={3}
         borderLeft={1}
         borderColor={"red"}

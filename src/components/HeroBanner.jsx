@@ -4,14 +4,18 @@ import React from 'react'
 const HeroBanner = () => {
   return (
     <Box sx={{
-      backgroundImage: 'url(https://png.pngtree.com/thumb_back/fh260/background/20240911/pngtree-img-item-white-background-2023-jpg-isolated-wallpaper-texture-photo-image_16153995.jpg)',
-      backgroundSize: 'cover', 
-      backgroundPosition: 'center', 
-      backgroundRepeat: 'no-repeat', 
-      width: '100%', 
-      // height: '400px',
+      position: "relative", // ✅ Gradient overlay ঠিকমতো কাজ করার জন্য
+      width: "100%",
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                        url(https://img.freepik.com/free-vector/half-tone-blue-abstract-background-with-text-space_1017-41428.jpg)`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      height: '450px',
+      display:'flex',
+      justifyContent:'center'
     }}>
-     <Typography variant='h4' textAlign={'center'} py={16} color='#fff'>Research   |   Innovation   |   Execution
+     <Typography variant='h4' textAlign={'center'} alignSelf={'center'}  color='#fff'>Research   |   Innovation   |   Execution
       </Typography>
     </Box>
   )
