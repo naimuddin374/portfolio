@@ -4,35 +4,58 @@ import React from "react";
 const data = [
   {
     id: 1,
-    header: "Bachelor of Computer Science & Engineering",
-    date: "Years: 2020 - 2022",
-    title: "Fareast International University, Dhaka, Bangladesh",
+    category: "Languages",
+    items: ["JavaScript", "TypeScript"],
   },
   {
     id: 2,
-    header: "Bachelor of Computer Science & Engineering (Dropped)",
-    date: "Years: 2017 - 2019",
-    title: "Green University of Bangladesh, Dhaka, Bangladesh",
+    category: "Frameworks",
+    items: ["NestJS", "Express.js", "Next.js", "gRPC"],
   },
   {
     id: 3,
-    header: "Higher Secondary School Certificate",
-    date: "Year: 2016",
-    title: "Madaripur Technical School and College, Madaripur, Bangladesh",
+    category: "Libraries/APIs",
+    items: ["Node.js", "React", "Redux", "Socket.IO", "WebRTC"],
   },
   {
     id: 4,
-    header: "Secondary School Certificate",
-    date: "Year: 2013",
-    title: "Kalini Model Pilot High School, Kalkini, Madaripur, Bangladesh",
+    category: "Tools",
+    items: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Lucidchart",
+      "Slack",
+      "Notion",
+      "Jira",
+      "Mongoose",
+      "Nginx",
+      "PM2",
+    ],
+  },
+  {
+    id: 5,
+    category: "Paradigms",
+    items: ["Agile", "Design Patterns", "Microservices"],
+  },
+  {
+    id: 6,
+    category: "Storage",
+    items: ["MongoDB", "PostgreSQL", "MySQL", "JSON"],
+  },
+  {
+    id: 7,
+    category: "Platforms",
+    items: ["AWS", "Google Cloud", "Firebase", "Heroku", "DigitalOcean"],
   },
 ];
 
-const Education = () => {
+const Skill = () => {
   return (
-    <Box py={3} id="educations">
+    <Box py={3} id="skills">
       <Typography mb={3} variant="h4">
-        Educations
+        Skills
       </Typography>
 
       <Box
@@ -74,7 +97,7 @@ const Education = () => {
                 },
               }}
             >
-              {item.header}
+              {item.category}
             </Typography>
             <Chip
               sx={{
@@ -84,11 +107,11 @@ const Education = () => {
                 textTransform: "capitalize",
                 fontWeight: 400,
               }}
-              label={item.date}
+              label={item.items.join(", ")}
             />
-            <Typography display={"block"} component={"i"}>
-              {item.title}
-            </Typography>
+            {/* <Typography display={"block"} component={"i"}>
+              {item.items.join(", ")}
+            </Typography> */}
           </Box>
         ))}
       </Box>
@@ -96,4 +119,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Skill;

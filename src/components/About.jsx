@@ -1,25 +1,27 @@
 import { Box, Grid2, Typography } from "@mui/material";
 import React from "react";
 
+import image from "../assets/img/IMG_5329-2.jpg";
+
 const About = () => {
   return (
-    <Box py={3}>
+    <Box py={3} id="about">
       <Typography variant="h4" mb={3}>
         About Me
       </Typography>
       <Grid2 container spacing={2}>
         <Grid2 size={3}>
           <Box
-          height={'100%'}
+            height={"100%"}
             p={1}
             border={1}
             borderRadius={1}
             borderColor={"rgba(0, 0, 0, .125)"}
           >
             <img
-              style={{ width: "100%",objectFit:'cover',height:'100%' }}
-              src="https://www.hubspot.com/hs-fs/hubfs/portfoliowebsites-1.webp?width=595&name=portfoliowebsites-1.webp"
-              alt=""
+              style={{ width: "100%", objectFit: "cover", height: "100%" }}
+              src={image}
+              alt="Naim Photo"
             />
           </Box>
         </Grid2>
@@ -30,55 +32,25 @@ const About = () => {
             borderRadius={1}
             borderColor={"rgba(0, 0, 0, .125)"}
           >
-            <Typography mb={2} lineHeight={'30px'}>
-              Hi! I'm Shaykh Siddique, a PhD student in the Department of
-              Computer Science at Texas A&M University. I'm advised by Dr.
-              Nitesh Saxena and co-advised by Dr. Irfan Khan in the{" "}
-              <Typography
-                mr={0.5}
-                component={"a"}
-                href="#"
-                target="_blank"
-                color="#007bff"
-              >
-                {" "}
-                Security and Privacy In Emerging Computing and Networking
-                Systems (SPIES)
-              </Typography>
-              research lab, and the{" "}
-              <Typography
-                mr={0.5}
-                component={"a"}
-                href="#"
-                target="_blank"
-                color="#007bff"
-              >
-                Clean And Resilient Energy Systems (CARES)
-              </Typography>
-              lab. My research interests lie in building privacy engineering
-              tools using machine learning and artificial intelligence.
-            </Typography>
-            <Typography mb={2} lineHeight={'30px'}>
-              My passion for applying Deep Learning and Artificial Intelligence
-              to real-world challenges has grown stronger as I've developed my
-              skills over the years. The deeper I delve into this field, the
-              more I admire its potential to elegantly address complex issues in
-              areas like cybersecurity, air/marine defense systems, and computer
-              vision for medical imaging.
-            </Typography>
-            <Typography mb={2} lineHeight={'30px'}>
-              I completed my MS in Computer Science from Prairie View A&M
-              University, Texas, USA. My master’s thesis focused on applying
-              machine learning to sports, where I developed predictive models
-              for player performance and game outcomes. This work involved
-              leveraging statistical and computational techniques to optimize
-              teaming strategies in sports management.
-            </Typography>
-            <Typography lineHeight={'30px'}>
-              Beyond my research pursuits, I have a deep passion for traveling
-              and immersing myself in nature. I find great joy in exploring new
-              places and experiencing different cultures. Additionally, I enjoy
-              swimming, playing badminton, and engaging in chess.
+            <Typography mb={2} lineHeight={"30px"}>
+              I’m an experienced <b>Full Stack Developer and DevOps Engineer</b>{" "}
+              with a strong background in designing and developing scalable,
+              high-performance applications since 2018. My expertise spans
+              microservices architecture, cloud infrastructure, and CI/CD
+              pipelines, enabling me to build efficient, resilient software
+              solutions. Over the years, I’ve worked on auction platforms, OTT
+              services, real-time communication apps, and business management
+              solutions, using technologies like{" "}
+              <b>
+                Node.js, React, TypeScript, PostgreSQL, AWS, and Google Cloud.
+              </b>
+              <br />
+              <br />
+              Beyond coding, I love the thrill of road trips, exploring new
+              places, and embracing challenges—whether in technology or on the
+              open road. My passion for problem-solving, clean code, and
+              continuous learning fuels my drive to deliver impactful solutions.
+              Let's build something amazing together!
             </Typography>
           </Box>
         </Grid2>

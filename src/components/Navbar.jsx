@@ -7,25 +7,35 @@ const Navbar = () => {
   const navItems = [
     "Home",
     "About",
-    "Education",
-    "Publications",
-    "Experience",
+    "Experiences",
+    "Skills",
+    "Educations",
+    "Projects",
     "Contact",
   ];
   return (
-    <Box bgcolor={'#007bff'} component="nav" position={'sticky'} top={0} zIndex={1000}>
+    <Box
+      bgcolor={"#007bff"}
+      component="nav"
+      position={"sticky"}
+      top={0}
+      zIndex={1000}
+    >
       <Toolbar>
         <Typography
           variant="h6"
           component="div"
-          sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          sx={{
+            flexGrow: 1,
+            display: { xs: "none", sm: "block", color: "white" },
+          }}
         >
-          Shaykh Siddique
+          Naim Uddin
         </Typography>
         <Box>
           {navItems.map((item) => (
             <Typography
-            key={item}
+              key={item}
               ml={2}
               sx={{ textDecoration: "none", color: "#fff" }}
               component={"a"}

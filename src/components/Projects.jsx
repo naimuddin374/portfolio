@@ -1,45 +1,66 @@
 import { Box, Chip, Typography } from "@mui/material";
 import React from "react";
 
-const Publications = () => {
-  const publicationList = [
-    {
-      id: 1,
-      header:
-        "An Enhanced Strategy of Detecting Neurological Disorders from Magnetic Resonance Images Using Deep Learning",
-      date: "September 2023",
-      title:
-        "Shultana, S., & Frizell, S. In 2023 IEEE Sixth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE) (pp. 99-104). IEEE.",
-      doi: "10.1109/AIKE59827.2023.00024",
-      link: "#",
-    },
-    {
-      id: 2,
-      header:
-        "CVD: An improved approach of software vulnerability detection for object oriented programming languages using deep learning",
-      date: "October 2022",
-      title:
-        "Hridoy, A. A. I., Khushbu, S. A., & Das, A. K. In Proceedings of the Future Technologies Conference (pp. 145-164), Springer Nature.",
-      doi: "10.1007/978-3-031-18461-1_10",
-      link: "#",
-    },
-  ];
+const data = [
+  {
+    id: 1,
+    title: "AI-Based Auction Bidding Platform",
+    date: "Vendidit",
+    description:
+      "An AI-driven auction bidding platform where sellers create auctions and buyers place bids. The platform uses AI to predict product prices and suggest optimal bidding strategies for buyers.",
+    url: "https://www.vendidit.com",
+  },
+  {
+    id: 2,
+    title: "Online Depuzation System",
+    date: "Skaribe.ai",
+    description:
+      "An online depuzation platform where users can create legal matters and cases, assigning them to lawyers. AI is used to predict case costs and provide suggestions for users.",
+    url: "https://www.skribe.ai",
+  },
+  {
+    id: 3,
+    title: "Rabbithole Prime OTT Platform",
+    date: "Rabbithole Prime",
+    description:
+      "An OTT platform offering movies, web series, and more. It includes a subscription management system with daily, weekly, monthly, and yearly options.",
+    url: "https://www.rabbitholebd.com",
+  },
+  {
+    id: 4,
+    title:
+      "Runner Automobiles: Two & Three-Wheeler Sales, Spare Parts, and Service Management with EMI System",
+    date: "Runner Automobiles",
+    description:
+      "An online platform for purchasing two and three-wheelers, spare parts, and services, including an EMI system for financing.",
+    url: "http://runnerautomobiles.com",
+  },
+  {
+    id: 5,
+    title: "Online Cattle Hut for Qurabni Eid in Bangladesh",
+    date: "Bengal Meet Qurabni",
+    description:
+      "An online platform for purchasing cattle and managing delivery for Qurabni Eid in Bangladesh.",
+    url: "https://qurbani.bengalmeat.com",
+  },
+];
 
+const Projects = () => {
   return (
-    <Box py={3}>
+    <Box py={3} id="projects">
       <Typography mb={3} variant="h4">
-        Publications
+        Projects
       </Typography>
 
       <Box
-         ml={3.5}
+        ml={3.5}
         pl={3}
         borderLeft={1}
         borderColor={"red"}
         sx={{ borderWidth: "2px" }}
         position={"relative"}
       >
-        {publicationList.map((item) => (
+        {data.map((item) => (
           <Box
             key={item.id}
             sx={{
@@ -70,7 +91,7 @@ const Publications = () => {
                 },
               }}
             >
-              {item.header}
+              {item.title}
             </Typography>
             <Chip
               sx={{
@@ -83,20 +104,17 @@ const Publications = () => {
               label={item.date}
             />
             <Typography display={"block"} component={"i"}>
-              <Typography component={"strong"} fontWeight={700}>
-                Siddique, S.
-              </Typography>
-              , {item.title}
+              {item.description}
             </Typography>
             <Typography component={"i"}>
-              Doi:{" "}
+              URL:{" "}
               <Typography
                 sx={{ textDecoration: "none", color: "#007bff" }}
                 component={"a"}
-                href={item.link}
+                href={item.url}
                 target="_blank"
               >
-                {item.doi}
+                {item.url}
               </Typography>
             </Typography>
           </Box>
@@ -106,4 +124,4 @@ const Publications = () => {
   );
 };
 
-export default Publications;
+export default Projects;

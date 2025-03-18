@@ -1,39 +1,55 @@
 import { Box, Chip, Typography } from "@mui/material";
 import React from "react";
 
-const ProfessionalExperience = () => {
-  const educationList = [
-    {
-      id: 1,
-      header: "Graduate Research Assistant",
-      date: "AAugust 2024 – Present",
-      clg: "Texas A&M University",
-      title: "College Station, TX, United States",
-    },
-    {
-      id: 2,
-      header: "DevOps Engineer (Identity and Access Management)",
-      date: "February 2022 – May 2024",
-      clg: "Prairie View A&M University",
-      title: "Prairie View, TX, United States",
-    },
-  ];
+const data = [
+  {
+    id: 1,
+    header: "Sr. Software Engineer",
+    date: "August 2022 – Present (Remote)",
+    clg: "Green Pants Studio",
+    title: "412 Thunderbay Dr., Georgetown TX 78626, United States",
+  },
+  {
+    id: 2,
+    header: "Sr. Software Engineer",
+    date: "August 2022 – February 2023 (Remote)",
+    clg: "Skribe.ai",
+    title:
+      "13215 Bee Cave Parkway, Suite A220 Austin, Texas 78738, United States",
+  },
+  {
+    id: 3,
+    header: "Sr. Software Engineer",
+    date: "August 2020 – August 2022",
+    clg: "TiCON System Ltd.",
+    title:
+      "House of Veritas, Level 6, House of Veritas, 8 Gareeb-e-Nawaz Ave, 8 Gareeb-e-Newaz Ave, Dhaka 1230, Bangladesh",
+  },
+  {
+    id: 3,
+    header: "Software Engineer",
+    date: "January 2018 – August 2020",
+    clg: "Beatnik",
+    title: "House 106, Park Road DOHS Mohakhali, Dhaka-1206, Bangladesh",
+  },
+];
 
+const Experience = () => {
   return (
-    <Box py={3}>
+    <Box py={3} id="experiences">
       <Typography mb={3} variant="h4">
-        Professional Experience
+        Experiences
       </Typography>
 
       <Box
-         ml={3.5}
+        ml={3.5}
         pl={3}
         borderLeft={1}
         borderColor={"red"}
         sx={{ borderWidth: "2px" }}
         position={"relative"}
       >
-        {educationList.map((item) => (
+        {data.map((item) => (
           <Box
             key={item.id}
             sx={{
@@ -89,4 +105,4 @@ const ProfessionalExperience = () => {
   );
 };
 
-export default ProfessionalExperience;
+export default Experience;
