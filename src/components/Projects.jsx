@@ -47,9 +47,9 @@ const data = [
 
 const Projects = () => {
   return (
-    <Box py={3} id="projects">
+    <Box py={3} id="works">
       <Typography mb={3} variant="h4">
-        Projects
+        Recent Works
       </Typography>
 
       <Box

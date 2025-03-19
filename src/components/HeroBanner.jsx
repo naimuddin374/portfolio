@@ -24,8 +24,21 @@ const HeroBanner = () => {
         alignSelf={"center"}
         color="#fff"
       >
-        Research | Innovation | Execution
-      </Typography>
+        Research | Innovate | Build | Scale
+        {/*  <br />
+        <Typography
+          variant="body1"
+          textAlign={"center"}
+          alignSelf={"center"}
+          color="#fff"
+        >
+          🔹 Research – Continuously exploring new technologies and trends.{" "}
+          <br />
+          🔹 Innovate – Crafting creative and cutting-edge solutions. <br />
+          🔹 Build – Turning ideas into high-performance applications. <br />
+          🔹 Scale – Ensuring solutions are robust, scalable, and future-proof.
+        </Typography> */}
+      </Typography>{" "}
     </Box>
   );
 };
