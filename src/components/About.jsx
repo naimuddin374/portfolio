@@ -33,14 +33,14 @@ const About = () => {
             borderColor={"rgba(0, 0, 0, .125)"}
           >
             <Typography mb={2} lineHeight={"30px"}>
-              I’m an experienced <b>Full Stack Developer and DevOps Engineer</b>{" "}
-              with a strong background in designing and developing scalable,
-              high-performance applications since 2018. My expertise spans
-              microservices architecture, cloud infrastructure, and CI/CD
-              pipelines, enabling me to build efficient, resilient software
-              solutions. Over the years, I’ve worked on auction platforms, OTT
-              services, real-time communication apps, and business management
-              solutions, using technologies like{" "}
+              I’m an experienced <b>Senior Software Engineer</b> with a strong
+              background in designing and developing scalable, high-performance
+              applications since 2018. My expertise spans microservices
+              architecture, cloud infrastructure, and CI/CD pipelines, enabling
+              me to build efficient, resilient software solutions. Over the
+              years, I’ve worked on auction platforms, OTT services, real-time
+              communication apps, and business management solutions, using
+              technologies like{" "}
               <b>
                 Node.js, React, TypeScript, PostgreSQL, AWS, and Google Cloud.
               </b>
