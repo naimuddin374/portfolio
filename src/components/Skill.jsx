@@ -1,5 +1,4 @@
 import { Box, Chip, Typography } from "@mui/material";
-import React from "react";
 
 const data = [
   {
@@ -36,6 +35,7 @@ const data = [
       "GitHub",
       "GitLab",
       "Bitbucket",
+      "RabbitMQ",
       "Mongoose",
       "Nginx",
       "Terraform",
