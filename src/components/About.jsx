@@ -1,5 +1,4 @@
 import { Box, Grid2, Typography } from "@mui/material";
-import React from "react";
 
 import image from "../assets/img/IMG_5329-2.jpg";
 
@@ -33,24 +32,31 @@ const About = () => {
             borderColor={"rgba(0, 0, 0, .125)"}
           >
             <Typography mb={2} lineHeight={"30px"}>
-              I’m an experienced <b>Senior Software Engineer</b> with a strong
-              background in designing and developing scalable, high-performance
-              applications since 2018. My expertise spans microservices
-              architecture, cloud infrastructure, and CI/CD pipelines, enabling
-              me to build efficient, resilient software solutions. Over the
-              years, I’ve worked on auction platforms, OTT services, real-time
-              communication apps, and business management solutions, using
-              technologies like{" "}
+              I’m an experienced <b>Backend-Focused Full Stack Engineer</b> with
+              a strong background in building scalable, high-performance systems
+              since 2018. My core strengths lie in{" "}
               <b>
-                Node.js, React, TypeScript, PostgreSQL, AWS, and Google Cloud.
-              </b>
+                Node.js, NestJS, microservices architecture, CI/CD pipelines,
+                and cloud infrastructure
+              </b>{" "}
+              (AWS, GCP). I’ve worked extensively with{" "}
+              <b>PostgreSQL, MongoDB, Redis, RabbitMQ, and Docker</b> in
+              production, delivering robust solutions across domains like
+              auction tech, OTT media, real-time communications, and business
+              operations.
               <br />
               <br />
-              Beyond coding, I love the thrill of road trips, exploring new
-              places, and embracing challenges—whether in technology or on the
-              open road. My passion for problem-solving, clean code, and
-              continuous learning fuels my drive to deliver impactful solutions.
-              Let's build something amazing together!
+              While I specialize in backend engineering, I also contribute to
+              modern frontend projects using{" "}
+              <b>React, Next.js, and TypeScript</b>, ensuring cohesive
+              end-to-end product delivery. I’m passionate about clean
+              architecture, performance, and scalable code — always striving for
+              engineering excellence.
+              <br />
+              <br />
+              Beyond coding, I love road trips, exploring new places, and
+              tackling challenges — whether in technology or on the open road.
+              Let’s build something powerful and meaningful together!
             </Typography>
           </Box>
         </Grid2>
