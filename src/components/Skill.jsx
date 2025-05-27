@@ -30,6 +30,9 @@ const data = [
     id: 4,
     category: "Tools",
     items: [
+      "AI Integration",
+      "Cursor AI",
+      "Developer Workflow Automation",
       "Docker",
       "Git",
       "GitHub",
