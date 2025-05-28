@@ -4,7 +4,7 @@ const data = [
   {
     id: 1,
     category: "Languages",
-    items: ["JavaScript", "TypeScript", "PHP", "SQL", "MQL"],
+    items: ["JavaScript", "TypeScript", "PHP", "SQL"],
   },
   {
     id: 2,
