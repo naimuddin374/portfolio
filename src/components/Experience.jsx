@@ -1,36 +1,39 @@
 import { Box, Chip, Typography } from "@mui/material";
-import React from "react";
 
 const data = [
   {
     id: 1,
     header: "Sr. Software Engineer",
-    date: "August 2022 – Present (Remote)",
+    date: "January 2023 – Present (Remote)",
     clg: "Green Pants Studio",
     title: "412 Thunderbay Dr., Georgetown TX 78626, United States",
+    url: "https://www.greenpantsstudio.com",
   },
   {
     id: 2,
     header: "Sr. Software Engineer",
-    date: "August 2022 – February 2023 (Remote)",
+    date: "August 2022 – December 2022 (Remote)",
     clg: "Skribe.ai",
     title:
       "13215 Bee Cave Parkway, Suite A220 Austin, Texas 78738, United States",
+    url: "https://skribe.ai",
   },
   {
     id: 3,
     header: "Sr. Software Engineer",
-    date: "August 2020 – August 2022",
+    date: "August 2020 – July 2022",
     clg: "TiCON System Ltd.",
     title:
       "House of Veritas, Level 6, House of Veritas, 8 Gareeb-e-Nawaz Ave, 8 Gareeb-e-Newaz Ave, Dhaka 1230, Bangladesh",
+    url: "https://www.ticonsys.com",
   },
   {
-    id: 3,
+    id: 4,
     header: "Software Engineer",
-    date: "January 2018 – August 2020",
+    date: "January 2018 – July 2020",
     clg: "Beatnik",
     title: "House 106, Park Road DOHS Mohakhali, Dhaka-1206, Bangladesh",
+    url: "https://beatniktechnology.com",
   },
 ];
 
@@ -97,6 +100,21 @@ const Experience = () => {
                 {item.clg}
               </Typography>
               , {item.title}
+            </Typography>
+            <Typography
+              fontWeight={500}
+              href={item.url}
+              color={"#fe4747"}
+              fontSize={16}
+              sx={{ textDecoration: "none" }}
+              variant="body1"
+              className="link"
+              gutterBottom
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.url}
             </Typography>
           </Box>
         ))}

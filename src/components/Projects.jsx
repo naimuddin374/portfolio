@@ -1,46 +1,66 @@
 import { Box, Chip, Typography } from "@mui/material";
-import React from "react";
 
 const data = [
   {
     id: 1,
-    title: "AI-Based Auction Bidding Platform",
-    date: "Vendidit",
+    name: "Vendidit",
+    title:
+      "Vendidit is a modern AI-powered marketplace for the 105M+ resellers and consumers in the secondary market.",
     description:
-      "An AI-driven auction bidding platform where sellers create auctions and buyers place bids. The platform uses AI to predict product prices and suggest optimal bidding strategies for buyers.",
+      "The value of goods being returned, resold, and liquidated is estimated to be valued at around 2 Trillion in 2030. We want to make it easier for sellers to move merchandise through this market, and for buyers to tap into the market.",
     url: "https://www.vendidit.com",
   },
   {
     id: 2,
-    title: "Online Depuzation System",
-    date: "Skaribe.ai",
+    name: "Skaribe.ai",
+    title:
+      "Skribe is the non-stenographic alternative to court reporting that gives you the speed, tools, and control today’s litigation demands.",
     description:
-      "An online depuzation platform where users can create legal matters and cases, assigning them to lawyers. AI is used to predict case costs and provide suggestions for users.",
+      "Capture, analyze and share legal testimony, including depositions, EUOs, and more. Powered by Zoom and integrated within Skribe, you can host your events with us and get them automatically processed and put into your Library when complete.",
     url: "https://www.skribe.ai",
   },
   {
     id: 3,
-    title: "Rabbithole Prime OTT Platform",
-    date: "Rabbithole Prime",
+    name: "Rabbithole Prime",
+    title: "Rabbithole Prime- Live Sports & Entertainment, The Way You Want",
     description:
-      "An OTT platform offering movies, web series, and more. It includes a subscription management system with daily, weekly, monthly, and yearly options.",
+      "Rabbitholebd is a video streaming based premium solutions that allows its subscribers to watch live Cricket and Football matches. Huge collections of Drama, Telefilms, Sports, Traveling, TV shows and many more. There are always something new to discover and contents are added in regular intervals!",
     url: "https://www.rabbitholebd.com",
   },
   {
     id: 4,
+    name: "ShowTalent",
     title:
-      "Runner Automobiles: Two & Three-Wheeler Sales, Spare Parts, and Service Management with EMI System",
-    date: "Runner Automobiles",
+      "All Society Business & Economy Science & Technology Arts & Culture Sports & Fitness Religion. Post Your Content Here.",
     description:
-      "An online platform for purchasing two and three-wheelers, spare parts, and services, including an EMI system for financing.",
-    url: "http://runnerautomobiles.com",
+      "All Society Business & Economy Science & Technology Arts & Culture Sports & Fitness Religion. Post Your Content Here.",
+    url: "https://www.showtalent.org",
   },
   {
     id: 5,
-    title: "Online Cattle Hut for Qurabni Eid in Bangladesh",
-    date: "Bengal Meet Qurabni",
+    name: "Lubyc",
+    title:
+      "Lubyc's innovative all-in-one platform is specifically designed to meet your business's unique needs, fostering optimal growth through enhanced efficiency and productivity.",
     description:
-      "An online platform for purchasing cattle and managing delivery for Qurabni Eid in Bangladesh.",
+      "Grow yourself and your business inside a verified community worldwide! Lubyc is an online multi-sided business and life management platform. A Lubyc Profile is an authenticated persona used for sharing your or your business’s online presence with others members of the Lubyc authenticated community. Through your Lubyc presence and its integrated suite of life management tools.",
+    url: "https://www.lubyc.com",
+  },
+  {
+    id: 6,
+    name: "Runner Automobiles",
+    title:
+      "Runner Automobiles PLC, the pioneer motorcycle manufacturer and exporter started its journey back in 2000.",
+    description:
+      "Runner Automobiles PLC is a motorcycle and three-wheeler manufacturer based in Bangladesh. The company produces a range of motorcycles varying in size from 80 to 150 CC, and has become a major player in the sub 100 CC motorcycle segment in the country.",
+    url: "http://runnerautomobiles.com",
+  },
+  {
+    id: 7,
+    name: "Bengal Meet Qurabni",
+    title:
+      "We at Bengal Meat, practice all-natural processes in the upbringing of the cattle, its food habit and habitat. So, all cattle in our farm grow up in freedom",
+    description:
+      "Bengal Meat Processing Industries Ltd. (BMPIL)  is a world-class meat industry, producing safe wholesome meat and meat-based further processed products that are of the highest quality and standard for domestic and international markets. Established in 2006 at Kashinathphpur, Santhia, Pabna, Bengal Meat is the first approved world-class abattoir in the country. Bengal Meat offers Halal, Safe, Hygienic, and Superior Quality meat and meat-based further processed products of Chicken, Cattle, Goat, Sheep, and Birds.",
     url: "https://qurbani.bengalmeat.com",
   },
 ];
@@ -91,7 +111,7 @@ const Projects = () => {
                 },
               }}
             >
-              {item.title}
+              {item.name}
             </Typography>
             <Chip
               sx={{
@@ -101,7 +121,7 @@ const Projects = () => {
                 textTransform: "capitalize",
                 fontWeight: 400,
               }}
-              label={item.date}
+              label={item.title}
             />
             <Typography display={"block"} component={"i"}>
               {item.description}

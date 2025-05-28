@@ -1,15 +1,17 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import coverImage from "../assets/img/my-cover.jpg";
 
 const HeroBanner = () => {
   return (
     <Box
       id="home"
       sx={{
-        position: "relative", // ✅ Gradient overlay ঠিকমতো কাজ করার জন্য
+        position: "relative", //
         width: "100%",
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                        url(https://img.freepik.com/free-vector/half-tone-blue-abstract-background-with-text-space_1017-41428.jpg)`,
+                        url(${coverImage})`,
+        // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        //                 url(https://img.freepik.com/free-vector/half-tone-blue-abstract-background-with-text-space_1017-41428.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
