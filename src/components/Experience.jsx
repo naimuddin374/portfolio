@@ -39,7 +39,7 @@ const data = [
 
 const Experience = () => {
   return (
-    <Box py={3} id="experiences">
+    <Box py={8} id="experiences">
       <Typography mb={3} variant="h4">
         Experiences
       </Typography>
