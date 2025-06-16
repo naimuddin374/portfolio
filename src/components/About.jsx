@@ -4,7 +4,7 @@ import image from "../assets/img/IMG_5329-2.jpg";
 
 const About = () => {
   return (
-    <Box py={3} id="about">
+    <Box py={8} id="about">
       <Typography variant="h4" mb={3}>
         About Me
       </Typography>

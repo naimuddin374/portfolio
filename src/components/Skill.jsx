@@ -119,7 +119,7 @@ const data = [
 
 const Skill = () => {
   return (
-    <Box py={3} id="skills">
+    <Box py={8} id="skills">
       <Typography mb={3} variant="h4">
         Skills
       </Typography>

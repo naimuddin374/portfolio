@@ -1,5 +1,4 @@
 import { Box, Chip, Typography } from "@mui/material";
-import React from "react";
 
 const data = [
   {
@@ -30,7 +29,7 @@ const data = [
 
 const Education = () => {
   return (
-    <Box py={3} id="educations">
+    <Box py={8} id="educations">
       <Typography mb={3} variant="h4">
         Educations
       </Typography>
