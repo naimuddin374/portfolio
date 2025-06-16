@@ -9,7 +9,7 @@ const About = () => {
         About Me
       </Typography>
       <Grid2 container spacing={2}>
-        <Grid2 size={3}>
+        <Grid2 size={{xs:12,sm:5,md:3}}>
           <Box
             height={"100%"}
             p={1}
@@ -24,7 +24,7 @@ const About = () => {
             />
           </Box>
         </Grid2>
-        <Grid2 size={9}>
+         <Grid2 size={{xs:12,sm:7,md:9}}>
           <Box
             p={2.5}
             border={1}
