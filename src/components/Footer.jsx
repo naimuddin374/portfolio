@@ -2,7 +2,6 @@ import CallIcon from "@mui/icons-material/Call";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import { Box, Typography } from "@mui/material";
-import React from "react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -18,7 +17,7 @@ const Footer = () => {
       <Typography color="#ffcc00">
         Naim Uddin © {currentYear} All rights reserved
       </Typography>
-      <Box display={"flex"} alignItems={"center"} gap={"60px"}>
+      <Box display={"flex"} alignItems={"center"} gap={{xs:"2px",md:'60px'}} flexWrap={'wrap'}>
         <Typography
           color="#fff"
           display={"flex"}
