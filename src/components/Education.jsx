@@ -1,29 +1,28 @@
 import { Box, Chip, Typography } from "@mui/material";
-import React from "react";
 
 const data = [
   {
     id: 1,
     header: "Bachelor of Computer Science & Engineering",
-    date: "Years: 2020 - 2022",
+    gpa: "Grade: 3.28 out of 4.00",
     title: "Fareast International University, Dhaka, Bangladesh",
   },
-  {
-    id: 2,
-    header: "Bachelor of Computer Science & Engineering (Dropped)",
-    date: "Years: 2017 - 2019",
-    title: "Green University of Bangladesh, Dhaka, Bangladesh",
-  },
+  // {
+  //   id: 2,
+  //   header: "Bachelor of Computer Science & Engineering (Dropped)",
+  //   gpa: "Years: 2017 - 2019",
+  //   title: "Green University of Bangladesh, Dhaka, Bangladesh",
+  // },
   {
     id: 3,
     header: "Higher Secondary School Certificate",
-    date: "Year: 2016",
+    gpa: "Grade: 3.68 out of 5.00",
     title: "Madaripur Technical School and College, Madaripur, Bangladesh",
   },
   {
     id: 4,
     header: "Secondary School Certificate",
-    date: "Year: 2013",
+    gpa: "Grade: 4.15 out of 5.00",
     title: "Kalini Model Pilot High School, Kalkini, Madaripur, Bangladesh",
   },
 ];
@@ -84,7 +83,7 @@ const Education = () => {
                 textTransform: "capitalize",
                 fontWeight: 400,
               }}
-              label={item.date}
+              label={item.gpa}
             />
             <Typography display={"block"} component={"i"}>
               {item.title}
