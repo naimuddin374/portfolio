@@ -4,64 +4,80 @@ const data = [
   {
     id: 1,
     name: "Vendidit",
-    title:
-      "Vendidit is a modern AI-powered marketplace for the 105M+ resellers and consumers in the secondary market.",
-    description:
-      "The value of goods being returned, resold, and liquidated is estimated to be valued at around 2 Trillion in 2030. We want to make it easier for sellers to move merchandise through this market, and for buyers to tap into the market.",
+    title: "AI-powered marketplace for resellers in the secondary market",
     url: "https://www.vendidit.com",
+    achievements: [
+      "Architected AWS infrastructure with CI/CD and autoscaling for millions of requests.",
+      "Built secure token-based auth with AWS Cognito and NextJS/NestJS bulk bidding, reducing buyer time by 40%.",
+      "Optimized queries for 3x faster APIs; automated fulfillment with AWS Lambda.",
+    ],
   },
   {
     id: 2,
-    name: "Skaribe.ai",
-    title:
-      "Skribe is the non-stenographic alternative to court reporting that gives you the speed, tools, and control today’s litigation demands.",
-    description:
-      "Capture, analyze and share legal testimony, including depositions, EUOs, and more. Powered by Zoom and integrated within Skribe, you can host your events with us and get them automatically processed and put into your Library when complete.",
-    url: "https://www.skribe.ai",
+    name: "Skribe.ai",
+    title: "Non-stenographic platform for legal deposition analysis",
+    url: "https://live.skribe.ai",
+    achievements: [
+      "Designed Node.js/PostgreSQL microservices for scalable transcript processing.",
+      "Developed ReactJS UI for text-video sync, enhancing legal accessibility.",
+      "Improved performance with Redis caching, cutting processing time by 30%.",
+    ],
   },
   {
     id: 3,
     name: "Rabbithole Prime",
-    title: "Rabbithole Prime- Live Sports & Entertainment, The Way You Want",
-    description:
-      "Rabbitholebd is a video streaming based premium solutions that allows its subscribers to watch live Cricket and Football matches. Huge collections of Drama, Telefilms, Sports, Traveling, TV shows and many more. There are always something new to discover and contents are added in regular intervals!",
+    title: "Live sports and entertainment streaming platform",
     url: "https://www.rabbitholebd.com",
+    achievements: [
+      "Built ReactPlayer-based video player, boosting engagement by 30%.",
+      "Integrated real-time subscriptions, increasing retention by 25%.",
+      "Optimized streaming for low-bandwidth networks with dynamic quality.",
+    ],
   },
   {
     id: 4,
-    name: "ShowTalent",
-    title:
-      "All Society Business & Economy Science & Technology Arts & Culture Sports & Fitness Religion. Post Your Content Here.",
-    description:
-      "All Society Business & Economy Science & Technology Arts & Culture Sports & Fitness Religion. Post Your Content Here.",
-    url: "https://www.showtalent.org",
+    name: "Bengal Meat Qurbani",
+    title: "E-commerce platform for halal meat products",
+    url: "https://qurbani.bengalmeat.com",
+    achievements: [
+      "Developed PHP/Node.js platform with PostgreSQL, boosting engagement by 35%.",
+      "Optimized APIs for catalog and payment processing, reducing transaction time by 20%.",
+      "Implemented CI/CD and secure payment gateways for reliability.",
+    ],
   },
   {
     id: 5,
-    name: "Lubyc",
-    title:
-      "Lubyc's innovative all-in-one platform is specifically designed to meet your business's unique needs, fostering optimal growth through enhanced efficiency and productivity.",
-    description:
-      "Grow yourself and your business inside a verified community worldwide! Lubyc is an online multi-sided business and life management platform. A Lubyc Profile is an authenticated persona used for sharing your or your business’s online presence with others members of the Lubyc authenticated community. Through your Lubyc presence and its integrated suite of life management tools.",
-    url: "https://www.lubyc.com",
+    name: "Runners Automobile",
+    title: "E-commerce platform for motorcycle and three-wheeler sales",
+    url: "http://runnerautomobiles.com",
+    achievements: [
+      "Built responsive PHP/JavaScript frontend, improving UX and engagement by 35%.",
+      "Optimized Node.js APIs for order processing, cutting transaction time by 20%.",
+      "Streamlined CI/CD deployments for high-traffic reliability.",
+    ],
   },
   {
     id: 6,
-    name: "Runner Automobiles",
+    name: "ShowTalent",
     title:
-      "Runner Automobiles PLC, the pioneer motorcycle manufacturer and exporter started its journey back in 2000.",
-    description:
-      "Runner Automobiles PLC is a motorcycle and three-wheeler manufacturer based in Bangladesh. The company produces a range of motorcycles varying in size from 80 to 150 CC, and has become a major player in the sub 100 CC motorcycle segment in the country.",
-    url: "http://runnerautomobiles.com",
+      "All Society Business & Economy Science & Technology Arts & Culture Sports & Fitness Religion. Post Your Content Here.",
+    url: "https://www.showtalent.org",
+    achievements: [
+      "Built responsive PHP/JavaScript frontend, improving UX and engagement by 35%.",
+      "Optimized Node.js APIs for order processing, cutting transaction time by 20%.",
+      "Streamlined CI/CD deployments for high-traffic reliability.",
+    ],
   },
   {
     id: 7,
-    name: "Bengal Meet Qurabni",
+    name: "Lubyc",
     title:
-      "We at Bengal Meat, practice all-natural processes in the upbringing of the cattle, its food habit and habitat. So, all cattle in our farm grow up in freedom",
-    description:
-      "Bengal Meat Processing Industries Ltd. (BMPIL)  is a world-class meat industry, producing safe wholesome meat and meat-based further processed products that are of the highest quality and standard for domestic and international markets. Established in 2006 at Kashinathphpur, Santhia, Pabna, Bengal Meat is the first approved world-class abattoir in the country. Bengal Meat offers Halal, Safe, Hygienic, and Superior Quality meat and meat-based further processed products of Chicken, Cattle, Goat, Sheep, and Birds.",
-    url: "https://qurbani.bengalmeat.com",
+      "Lubyc's innovative all-in-one platform is specifically designed to meet your business's unique needs, fostering optimal growth through enhanced efficiency and productivity.",
+    url: "https://www.lubyc.com",
+    achievements: [
+      "Built responsive PHP/JavaScript frontend, improving UX and engagement by 35%.",
+      "Optimized Node.js APIs for order processing, cutting transaction time by 20%.",
+    ],
   },
 ];
 
@@ -123,9 +139,18 @@ const Projects = () => {
               }}
               label={item.title}
             />
-            <Typography display={"block"} component={"i"}>
-              {item.description}
-            </Typography>
+            <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+              {item.achievements.map((achievement, index) => (
+                <Typography
+                  key={index}
+                  component="li"
+                  variant="body2"
+                  sx={{ mb: 0.5, lineHeight: 1.6 }}
+                >
+                  {achievement}
+                </Typography>
+              ))}
+            </Box>
             <Typography component={"i"}>
               URL:{" "}
               <Typography

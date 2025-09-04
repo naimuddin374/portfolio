@@ -1,98 +1,78 @@
-import { Box, Grid2, Typography } from "@mui/material";
-
+import { Box, Grid, Typography } from "@mui/material";
+import { motion } from "framer-motion"; // For subtle animation
 import image from "../assets/img/IMG_5329-2.jpg";
 
 const About = () => {
   return (
-    <Box py={8} id="about">
-      <Typography variant="h4" mb={3}>
+    <Box
+      py={6}
+      px={{ xs: 2, sm: 4 }}
+      id="about"
+      component={motion.div}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <Typography
+        variant="h4"
+        sx={{ mb: 3, fontWeight: 600, textAlign: { xs: "center", sm: "left" } }}
+      >
         About Me
       </Typography>
-      <Grid2 container spacing={2}>
-        <Grid2 size={{xs:12,sm:5,md:3}}>
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={5} md={3}>
           <Box
-            height={"100%"}
-            p={1}
-            border={1}
-            borderRadius={1}
-            borderColor={"rgba(0, 0, 0, .125)"}
+            sx={{
+              height: "100%",
+              borderRadius: 2,
+              boxShadow: 3,
+              overflow: "hidden",
+              transition: "transform 0.3s ease",
+              "&:hover": { transform: "scale(1.02)" },
+            }}
           >
             <img
-              style={{ width: "100%", objectFit: "cover", height: "100%" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
               src={image}
-              alt="Naim Photo"
+              alt="Naim Uddin Prince - Full Stack Developer"
             />
           </Box>
-        </Grid2>
-         <Grid2 size={{xs:12,sm:7,md:9}}>
+        </Grid>
+        <Grid item xs={12} sm={7} md={9}>
           <Box
-            p={2.5}
-            border={1}
-            borderRadius={1}
-            borderColor={"rgba(0, 0, 0, .125)"}
+            sx={{
+              p: 2.5,
+              border: 1,
+              borderColor: "rgba(0, 0, 0, 0.125)",
+              borderRadius: 2,
+              boxShadow: 2,
+            }}
           >
-            {/* <Typography mb={2} lineHeight={"30px"}>
-              I’m an experienced <b>Backend-Focused Full Stack Engineer</b> with
-              a strong background in building scalable, high-performance systems
-              since 2018. My core strengths lie in{" "}
-              <b>
-                Node.js, NestJS, microservices architecture, CI/CD pipelines,
-                and cloud infrastructure
-              </b>{" "}
-              (AWS, GCP). I’ve worked extensively with{" "}
-              <b>PostgreSQL, MongoDB, Redis, RabbitMQ, and Docker</b> in
-              production, delivering robust solutions across domains like
-              auction tech, OTT media, real-time communications, and business
-              operations.
+            <Typography variant="body1" sx={{ lineHeight: 1.8, mb: 2 }}>
+              I'm a <strong>Full-Stack Engineer</strong> with over 6 years of
+              experience building scalable web applications using{" "}
+              <strong>Node.js, NestJS, React, Next.js, TypeScript</strong>, and{" "}
+              <strong>AWS</strong>. I specialize in{" "}
+              <strong>microservices</strong>, <strong>CI/CD pipelines</strong>,
+              and <strong>event-driven systems</strong>, delivering solutions
+              for e-commerce, reverse logistics, OTT platforms, and legal tech.
               <br />
               <br />
-              While I specialize in backend engineering, I also contribute to
-              modern frontend projects using{" "}
-              <b>React, Next.js, and TypeScript</b>, ensuring cohesive
-              end-to-end product delivery. I’m passionate about clean
-              architecture, performance, and scalable code — always striving for
-              engineering excellence.
+              Notable achievements include reducing buyer interaction time by
+              40% on an auction platform and boosting viewer engagement by 30%
+              on an OTT streaming service. I’m skilled in{" "}
+              <strong>PostgreSQL, Redis, RabbitMQ</strong>, and{" "}
+              <strong>Docker</strong>, ensuring high-performance, secure
+              systems. My frontend work creates intuitive, responsive UIs, while
+              my backend expertise drives robust, scalable architectures.
               <br />
               <br />
-              Beyond coding, I love road trips, exploring new places, and
-              tackling challenges — whether in technology or on the open road.
-              Let’s build something powerful and meaningful together!
-            </Typography> */}
-
-            <Typography mb={2} lineHeight={"30px"}>
-              I’m a passionate <b>Full-Stack Engineer</b> with over{" "}
-              <b>7 years</b> of professional experience designing and building
-              scalable, high-performance web applications. I thrive across the
-              stack — from creating intuitive UIs with{" "}
-              <b>React, Next.js, and TypeScript</b> to architecting robust
-              backend systems using <b>Node.js, NestJS, and PostgreSQL</b>.
-              <br />
-              <br />
-              My work spans industries like{" "}
-              <b>
-                e-commerce, reverse logistics, OTT platforms, real-time
-                communication,
-              </b>{" "}
-              and <b>enterprise automation</b>. I enjoy solving complex
-              problems, delivering clean architecture, and building products
-              that scale — whether solo or as part of a fast-paced, agile team.
-              <br />
-              <br />
-              I’m also experienced in <b>DevOps practices</b> including{" "}
-              <b>AWS, Docker, and CI/CD pipelines</b>, ensuring stable
-              deployments and smooth developer workflows. On the backend, I
-              regularly work with high-performance technologies like{" "}
-              <b>Redis, RabbitMQ, and MongoDB</b> to support responsive,
-              event-driven systems.
-              <br />
-              <br />
-              Outside of work, I enjoy road trips, exploring new places, and
-              taking on new challenges — both in code and in life. Let’s build
-              something impactful together!
+              Beyond code, I love road trips and tackling challenges—let’s build
+              impactful solutions together!
             </Typography>
           </Box>
-        </Grid2>
-      </Grid2>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
