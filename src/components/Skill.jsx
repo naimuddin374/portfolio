@@ -21,6 +21,7 @@ const data = [
       "Redux",
       "Socket.IO",
       "WebRTC",
+      // "GraphQL",
       "Axios",
     ],
   },
