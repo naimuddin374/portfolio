@@ -20,9 +20,9 @@ const HomePage = () => {
         <Divider />
         <About />
         <Divider />
-        <Experience />
-        <Divider />
         <Skill />
+        <Divider />
+        <Experience />
         <Divider />
         <Education />
         <Divider />

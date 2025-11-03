@@ -16,22 +16,8 @@ const data = [
     ],
   },
   {
-    id: 1,
-    title: "Senior Software Engineer",
-    date: "Jan 2023 – Present",
-    company: "Green Pants Studio",
-    address: "412 Thunderbay Dr., Georgetown TX 78626, United States.",
-    type: "Remote",
-    url: "https://www.greenpantsstudio.com",
-    achievements: [
-      "Led team to deliver Vendidit auction platform features, reducing buyer interaction time by 40%.",
-      "Architected full-stack apps with AWS, NextJS, and NestJS for scalable, million-request systems.",
-      "Streamlined CI/CD and Docker deployments, optimizing DB queries for 3x faster APIs.",
-    ],
-  },
-  {
     id: 2,
-    title: "Senior Software Engineer",
+    title: "Sr. Software Engineer",
     date: "Aug 2022 – Dec 2022",
     company: "Skribe.ai",
     address:
@@ -46,7 +32,7 @@ const data = [
   },
   {
     id: 3,
-    title: "Senior Software Engineer",
+    title: "Software Engineer",
     date: "Aug 2020 – Jul 2022",
     company: "TiCON System Ltd.",
     address:
