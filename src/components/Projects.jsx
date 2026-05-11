@@ -25,6 +25,18 @@ const data = [
   },
   {
     id: 3,
+    name: "Allucent",
+    title:
+      "Construction scheduling platform integrating CPM, Lean Planning and P6®",
+    url: "https://www.allucent.io",
+    achievements: [
+      "Built a scalable real-time scheduling platform trusted by Turner, Kitchell, and JE Dunn.",
+      "Developed collaborative workflows with P6® integration, cutting schedule update time by 60%.",
+      "Engineered modular architecture supporting multiple scheduling approaches for projects of all sizes.",
+    ],
+  },
+  {
+    id: 4,
     name: "Rabbithole Prime",
     title: "Live sports and entertainment streaming platform",
     url: "https://www.rabbitholebd.com",
@@ -35,7 +47,7 @@ const data = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Bengal Meat Qurbani",
     title: "E-commerce platform for halal meat products",
     url: "https://qurbani.bengalmeat.com",
@@ -46,7 +58,7 @@ const data = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Runners Automobile",
     title: "E-commerce platform for motorcycle and three-wheeler sales",
     url: "http://runnerautomobiles.com",
@@ -57,7 +69,7 @@ const data = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "ShowTalent",
     title:
       "All Society Business & Economy Science & Technology Arts & Culture Sports & Fitness Religion. Post Your Content Here.",
@@ -69,7 +81,7 @@ const data = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "Lubyc",
     title:
       "Lubyc's innovative all-in-one platform is specifically designed to meet your business's unique needs, fostering optimal growth through enhanced efficiency and productivity.",

@@ -49,12 +49,13 @@ const About = () => {
             }}
           >
             <Typography variant="body1" sx={{ lineHeight: 1.8, mb: 2 }}>
-              I'm a <strong>Full-Stack Engineer</strong> with over 6 years of
+              I'm a <strong>Full-Stack Engineer</strong> with over 7 years of
               experience building scalable and AI-integrated systems using{" "}
               <strong>
                 Node.js, NestJS, React, Next.js, TypeScript, Python, FastAPI,
+                AWS
               </strong>{" "}
-              and <strong>AWS</strong>. I specialize in{" "}
+              and <strong>GCP</strong>. I specialize in{" "}
               <strong>microservices architecture</strong>,{" "}
               <strong>CI/CD pipelines</strong>, and{" "}
               <strong>event-driven design</strong>, delivering solutions across
@@ -63,11 +64,12 @@ const About = () => {
               <br />
               I’ve architected high-performance infrastructures using{" "}
               <strong>
-                PostgreSQL, MongoDB, Redis, RabbitMQ, Docker,
-              </strong> and <strong>Elasticsearch</strong>, ensuring fast,
-              secure, and reliable systems. My frontend work focuses on
-              intuitive and responsive UIs, while my backend expertise drives
-              clean, scalable architectures with automation and DevOps in mind.
+                PostgreSQL, Firestore, MongoDB, Redis, RabbitMQ, Docker,
+              </strong>{" "}
+              and <strong>Elasticsearch</strong>, ensuring fast, secure, and
+              reliable systems. My frontend work focuses on intuitive and
+              responsive UIs, while my backend expertise drives clean, scalable
+              architectures with automation and DevOps in mind.
               <br />
               <br />
               Passionate about clean architecture, AI-driven innovation, and

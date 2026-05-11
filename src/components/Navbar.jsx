@@ -35,18 +35,23 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "right" }}>
-       <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <Close />
-          </IconButton> 
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        edge="start"
+        sx={{ mr: 2, display: { sm: "none" } }}
+      >
+        <Close />
+      </IconButton>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding component={'a'} href={`#${item.toLocaleLowerCase()}`}>
+          <ListItem
+            key={item}
+            disablePadding
+            component={"a"}
+            href={`#${item.toLocaleLowerCase()}`}
+          >
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
@@ -62,9 +67,13 @@ function Navbar(props) {
   return (
     <Box position="sticky" top={0} zIndex={100}>
       <CssBaseline />
-      <AppBar component="nav" position="sticky" sx={{boxShadow:'none'}}>
+      <AppBar
+        component="nav"
+        position="sticky"
+        sx={{ boxShadow: "none", background: "#101117" }}
+      >
         <Toolbar>
-           <IconButton
+          <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
@@ -72,7 +81,7 @@ function Navbar(props) {
             sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
-          </IconButton> 
+          </IconButton>
           <Typography
             variant="h6"
             component="div"
@@ -99,16 +108,15 @@ function Navbar(props) {
           <Typography
             variant="h6"
             component="div"
-            textAlign={'right'}
+            textAlign={"right"}
             sx={{
               flexGrow: 1,
-              display: { xs: "block", sm: "none" } 
+              display: { xs: "block", sm: "none" },
             }}
           >
             Naim Uddin
           </Typography>
         </Toolbar>
-        
       </AppBar>
       <nav>
         <Drawer

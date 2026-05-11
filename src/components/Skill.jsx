@@ -39,6 +39,7 @@ const data = [
       "MongoDB",
       "MySQL",
       "Redis",
+      "Firestore",
       "Vector Databases",
       "Elasticsearch",
     ],
@@ -46,7 +47,7 @@ const data = [
   {
     id: 5,
     category: "Platforms",
-    items: ["AWS", "GCP"],
+    items: ["AWS", "GCP", "Firebase"],
   },
   {
     id: 6,
@@ -65,6 +66,7 @@ const data = [
     items: [
       "Docker",
       "Git",
+      "Firebase Auth",
       "GitHub Actions",
       "Nginx",
       "PM2",
