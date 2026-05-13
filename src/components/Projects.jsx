@@ -16,7 +16,7 @@ const data = [
     id: 2,
     name: "Skribe.ai",
     title: "Non-stenographic platform for legal deposition analysis",
-    url: "https://live.skribe.ai",
+    url: "https://skribe.ai",
     achievements: [
       "Designed Node.js/PostgreSQL microservices for scalable transcript processing.",
       "Developed ReactJS UI for text-video sync, enhancing legal accessibility.",
